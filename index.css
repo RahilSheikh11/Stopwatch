@@ -7,6 +7,16 @@ body {
   height: 100vh;
 }
 
+
+#myName {
+  position: absolute;
+  top: 170px;
+  left: 210px;
+  font-size: 40px;
+  color: black;
+}
+
+
 #timeContainer {
   text-align: center;
   background-color: white;
