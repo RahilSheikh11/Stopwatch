@@ -1,22 +1,22 @@
-const timeDisplay = document.querySelector("#timeDisplay"); // Get the element with id "timeDisplay"
-const startBtn = document.querySelector("#startBtn"); // Get the element with id "startBtn"
-const pauseBtn = document.querySelector("#pauseBtn"); // Get the element with id "pauseBtn"
-const resetBtn = document.querySelector("#resetBtn"); // Get the element with id "resetBtn"
+const timeDisplay = document.querySelector("#timeDisplay");
+const startBtn = document.querySelector("#startBtn"); 
+const pauseBtn = document.querySelector("#pauseBtn"); 
+const resetBtn = document.querySelector("#resetBtn"); 
 
-let startTime = 0; // Variable to store the start time in milliseconds
-let elapsedTime = 0; // Variable to store the elapsed time in milliseconds
-let currentTime = 0; // Variable to store the current time in milliseconds
-let paused = true; // Flag to track whether the timer is paused or not
-let intervalId; // Variable to store the interval ID for updating the timer
-let hrs = 0; // Variable to store the hours component of the timer
-let mins = 0; // Variable to store the minutes component of the timer
-let secs = 0; // Variable to store the seconds component of the timer
+let startTime = 0; 
+let elapsedTime = 0;
+let currentTime = 0; 
+let paused = true; 
+let intervalId; 
+let hrs = 0; 
+let mins = 0; 
+let secs = 0;
 
 startBtn.addEventListener("click", () => {
   if (paused) {
-    paused = false; // Set the flag to indicate that the timer is not paused
-    startTime = Date.now() - elapsedTime; // Set the start time by subtracting the elapsed time from the current time
-    intervalId = setInterval(updateTime, 1000); // Start the interval to update the timer every second
+    paused = false; 
+    startTime = Date.now() - elapsedTime; 
+    intervalId = setInterval(updateTime, 1000); 
   }
 });
 
