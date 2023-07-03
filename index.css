@@ -1,5 +1,5 @@
 body {
-  background-color: #f7f7f7;
+  background-color: #D3D3D3;
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
@@ -7,15 +7,23 @@ body {
   height: 100vh;
 }
 
+#timeContainer {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-.timerBtn:hover {
-  background-color: #0b0c10;
-
-
+#timeDisplay {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 20px;
+}
 
 .timerBtn {
   background-color: #1f2833;
-  color: #ffffff;
+  color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -24,23 +32,7 @@ body {
   margin: 5px;
 }
 
-#timeContainer {
-  text-align: center;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.timerBtn:hover {
+  background-color: #0b0c10;
 }
 
-
-}
-
-.timerBtn:active {
-  transform: translateY(1px);
-}
-
-#timeDisplay {
-  font-size: 40px;
-  color: #333333;
-  margin-bottom: 20px;
-}
